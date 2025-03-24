@@ -43,8 +43,8 @@ Her iki istasyon arasındaki bağlantılar da baglanti_ekle fonksiyonu ile eklen
   - En düşük maliyetli düğüm önce işleme alınır.
   - Hedefe en kısa sürede ulaşan yol bulunur.
 ### 4. **Neden Bu Algoritmalar Kullanıldı?**
-- **BFS**, düğüm sayısını minimize ederek en az aktarma yapılan güzergahı bulmada etkilidir.
-- **A***, yolculuk süresini optimize etmek için en iyi seçenektir.
+- **BFS**, düğüm sayısını minimize ederek en az aktarma yapılan güzergahı bulmada etkilidir. BFS, başlangıç noktasından hedef noktaya giderken, her bir istasyonun komşularını sırayla ziyaret eder. Bu sayede, en kısa düğüm sayısına sahip (en az aktarmalı) rotayı bulur.
+- **A***, yolculuk süresini optimize etmek için en iyi seçenektir.Bu algoritma ile aha hızlı ve verimli sonuçlar sağladık.
 
 ## 4. **Örnek Kullanım ve Test Sonuçları**
  **1.Örnek:AŞTİ'den OSB'ye:**
