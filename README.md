@@ -12,7 +12,7 @@ Bu proje, Ankara'daki belirli metro hatları ve durakları arasında en az aktar
 
 Bu projede, bir metro ağı modellemesi ve iki farklı rota bulma algoritması (en az aktarma ve en hızlı rota) kullanılarak, bir şehirdeki metro hatları ve istasyonları arasındaki bağlantılar hesaplanıyor. Şimdi, kullanılan algoritmaların çalışma mantığını ve işleyişini daha ayrıntılı şekilde açıklayacağım.
 
-** 1.İstasyonlar ve Bağlantılar**
+**1.İstasyonlar ve Bağlantılar**
 İlk olarak, metro istasyonları ve hatları tanımlanır. Her istasyon bir Istasyon sınıfı ile modellenir. Her istasyon:
 
 -idx: İstasyonun benzersiz kimliği
