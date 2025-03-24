@@ -46,7 +46,7 @@ Her iki istasyon arasındaki bağlantılar da baglanti_ekle fonksiyonu ile eklen
 - **BFS**, düğüm sayısını minimize ederek en az aktarma yapılan güzergahı bulmada etkilidir.
 - **A***, yolculuk süresini optimize etmek için en iyi seçenektir.
 
-### 5. **Örnek Kullanım ve Test Sonuçları**
+## 4. **Örnek Kullanım ve Test Sonuçları**
  **1.Örnek:AŞTİ'den OSB'ye:**
  - ```python
    rota = metro.en_az_aktarma_bul("M1", "K4")
@@ -98,7 +98,7 @@ Her iki istasyon arasındaki bağlantılar da baglanti_ekle fonksiyonu ile eklen
   
 
 
-### 6. **Projeyi Geliştirme Fikirleri**
+## 5. **Projeyi Geliştirme Fikirleri**
 - Görsel Arayüz: Komut satırı yerine, kullanıcıların rota arayabileceği bir kullanıcı arayüzü eklenebilir.
 - Gerçek Zamanlı Veri: Metro ağına ait duraklar ve tren bilgileri gerçek zamanlı verilerle entegre edilebilir. Böylece gecikme gibi problemlerde kullanıcıya farklı kombinasyonlar sunulabilir.
 - Yapay Zeka Optimizasyonu: Makine öğrenimi kullanarak, kullanıcı tercihlerine göre en uygun rotalar önerilebilir.
