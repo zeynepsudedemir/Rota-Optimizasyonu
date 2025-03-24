@@ -93,9 +93,6 @@ Her iki istasyon arasındaki bağlantılar da baglanti_ekle fonksiyonu ile eklen
    3. Keçiören'den AŞTİ'ye:
    En az aktarmalı rota: Keçiören -> Gar -> Gar -> Sıhhiye -> Kızılay -> AŞTİ
    En hızlı rota (19 dakika): Keçiören -> Gar -> Gar -> Sıhhiye -> Kızılay -> AŞTİ
-  
-  
-  
 
 
 ## 5. **Projeyi Geliştirme Fikirleri**
