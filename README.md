@@ -12,7 +12,7 @@ Bu proje, Ankara'daki belirli metro hatları ve durakları arasında en az aktar
 
 Bu projede, bir metro ağı modellemesi ve iki farklı rota bulma algoritması (en az aktarma ve en hızlı rota) kullanılarak, bir şehirdeki metro hatları ve istasyonları arasındaki bağlantılar hesaplanıyor. Şimdi, kullanılan algoritmaların çalışma mantığını ve işleyişini daha ayrıntılı şekilde açıklayacağım.
 
-1.** İstasyonlar ve Bağlantılar**
+** 1.İstasyonlar ve Bağlantılar**
 İlk olarak, metro istasyonları ve hatları tanımlanır. Her istasyon bir Istasyon sınıfı ile modellenir. Her istasyon:
 
 -idx: İstasyonun benzersiz kimliği
@@ -23,14 +23,15 @@ Bu projede, bir metro ağı modellemesi ve iki farklı rota bulma algoritması (
 
 -komsular: İstasyonun bağlı olduğu komşu istasyonlar ve bu bağlantının süresi
 
-İstasyonlar, MetroAgi sınıfı altında birleştirilir
+İstasyonlar, MetroAgi sınıfı altında birleştirilir.Bu sınıf, tüm istasyonları ve her hattın istasyonlarını tutan iki ana veri yapısını içerir.
+Her iki istasyon arasındaki bağlantılar da baglanti_ekle fonksiyonu ile eklenir.
 
-- **BFS Algoritması:**
+- **BFS Algoritması: En Az Aktarma Algoritması**
   En az aktarma yapılan rotayı bulmak için kullanılmıştır. BFS, bir grafı katman katman tarayarak en kısa düğüm sayısına sahip yolu belirler.
  İlk olarak, ilk istasyon kuyruğa eklenir
  İstasyon komşuları ziyaret edilir
  Hedefe ulaşırsa yol tamamlanmış olur ve en uygun rota çizilir
-- **A-Star Algoritması:**
+- **A-Star Algoritması:En Hızlı Rota Algoritması**
   En kısa süreli güzergahı bulmak için kullanılmıştır. Bu algoritma, Dijkstra ve Best-First Search (En İyi Öncelikli Arama) yaklaşımlarını birleştirerek çalışır.
  Bir değerlendirme fonksiyonu ile her düğümün toplam maliyeti hesaplanır.
  En düşük maliyetli düğüm önce işleme alınır.
