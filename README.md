@@ -9,6 +9,9 @@ Bu proje, Ankara'daki belirli metro hatları ve durakları arasında en az aktar
 - **collections.deque:** BFS algoritmasında kuyruk yapısını kullanarak işlemleri hızlı bir şekilde gerçekleştirmek için tercih edilmiştir.
   
 ## Algoritmaların Çalışma Mantığı
+
+Bu projede, bir metro ağı modellemesi ve iki farklı rota bulma algoritması (en az aktarma ve en hızlı rota) kullanılarak, bir şehirdeki metro hatları ve istasyonları arasındaki bağlantılar hesaplanıyor. Şimdi, kullanılan algoritmaların çalışma mantığını ve işleyişini daha ayrıntılı şekilde açıklayacağım.
+
 - **BFS Algoritması:**
   En az aktarma yapılan rotayı bulmak için kullanılmıştır. BFS, bir grafı katman katman tarayarak en kısa düğüm sayısına sahip yolu belirler.
  İlk olarak, ilk istasyon kuyruğa eklenir
