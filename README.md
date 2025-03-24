@@ -11,6 +11,16 @@ Bu proje, Ankara'daki belirli metro hatları ve durakları arasında en az aktar
 ## Algoritmaların Çalışma Mantığı
 
 Bu projede, bir metro ağı modellemesi ve iki farklı rota bulma algoritması (en az aktarma ve en hızlı rota) kullanılarak, bir şehirdeki metro hatları ve istasyonları arasındaki bağlantılar hesaplanıyor. Şimdi, kullanılan algoritmaların çalışma mantığını ve işleyişini daha ayrıntılı şekilde açıklayacağım.
+**1. İstasyonlar ve Bağlantılar**
+İlk olarak, metro istasyonları ve hatları tanımlanır. Her istasyon bir Istasyon sınıfı ile modellenir. Her istasyon:
+
+idx: İstasyonun benzersiz kimliği
+
+ad: İstasyonun adı
+
+hat: İstasyonun ait olduğu metro hattı
+
+komsular: İstasyonun bağlı olduğu komşu istasyonlar ve bu bağlantının süresi
 
 - **BFS Algoritması:**
   En az aktarma yapılan rotayı bulmak için kullanılmıştır. BFS, bir grafı katman katman tarayarak en kısa düğüm sayısına sahip yolu belirler.
